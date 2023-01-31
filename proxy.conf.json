@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "https://swapi-function-app.azurewebsites.net",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
