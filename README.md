@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
+## Provision Azure Resource Group (with Static Web App)
+
+Create a Resource Group
+
+```bash
+az group create --location westeurope --name angular-static-web-app
+```
+
+Create Static Web App
+
+```bash
+az deployment group create --resource-group angular-static-web-app --template-file arm_templates/template.json
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
